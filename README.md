@@ -3,60 +3,41 @@
 <h1 align="center">BatteryGlance</h1>
 
 <p align="center">
-  Der Akkustand von Maus, Tastatur, Kopfhörern und Controllern direkt in der Windows-Taskleiste.<br>
-  <a href="#english">English below</a>
+  The battery level of your mouse, keyboard, headphones and controllers, right in the Windows taskbar.
 </p>
 
 <p align="center">
-  <a href="https://github.com/grundimdev/battery-glance-releases/releases/latest/download/BatteryGlance-win-Setup.exe"><b>Herunterladen für Windows 10/11</b></a>
+  <a href="https://github.com/grundimdev/battery-glance-releases/releases/latest/download/BatteryGlance-win-Setup.exe"><b>Download for Windows 10/11</b></a>
 </p>
 
-## Was die App kann
+## Features
 
-- **Ein Blick genügt:** Das Symbol im Infobereich zeigt das Gerät mit dem niedrigsten Akkustand, in Ampelfarben und auf Wunsch mit Prozentzahl.
-- **Alle Geräte auf einen Klick:** Ein Klick aufs Symbol öffnet die Übersicht. Bei Earbuds stehen links, rechts und das Etui einzeln da.
-- **Rechtzeitig gewarnt:** Eine Benachrichtigung (auf Wunsch mit Warnton) meldet, wenn ein Gerät aufgeladen werden sollte. Die Schwelle stellst du selbst ein.
-- **Verlauf:** Ein Klick auf ein Gerät zeigt den Akkustand der letzten Tage und schätzt, wie lange der Akku noch hält.
-- **Deins:** Geräte sortieren, ausblenden oder festlegen, welches das Symbol zeigt. Hell und dunkel, Deutsch und Englisch.
-- **Für Bastler:** Auf Wunsch stellt die App die Akkustände als JSON unter `http://localhost:47800/api/devices` bereit, z. B. für Rainmeter oder Stream Deck.
-- **Hält sich selbst aktuell** und startet mit Windows.
+- **At a glance:** the tray icon shows the device with the lowest battery, color-coded and optionally as a number.
+- **All devices in one click:** click the icon for the overview. Earbuds show left, right and case separately.
+- **Warned in time:** a notification (optionally with an alarm sound) tells you when a device needs charging, at a threshold you choose.
+- **History:** click a device for its battery level over the last days and an estimate of how long the battery lasts.
+- **Make it yours:** reorder or hide devices and choose which one the icon shows. Light and dark theme, English and German.
+- **For tinkerers:** optionally, the app serves the battery levels as JSON at `http://localhost:47800/api/devices`, e.g. for Rainmeter or Stream Deck.
+- **Keeps itself up to date** and starts with Windows.
 
-## Unterstützte Geräte
+## Supported devices
 
-| Art | Geräte |
+| Type | Devices |
 | --- | --- |
-| Bluetooth allgemein | Alle Geräte, deren Akkustand Windows kennt, und Geräte mit dem Bluetooth-LE-Akkudienst |
-| Apple | AirPods und Beats (links, rechts, Etui), Magic Keyboard, Magic Mouse, Magic Trackpad |
-| Earbuds | Samsung Galaxy Buds, Sony WH-/WF-/LinkBuds, Huawei FreeBuds, Geräte mit Google Fast Pair (Pixel Buds, OnePlus, Nothing, JBL u. a.) |
-| Logitech | Unifying, Bolt, Lightspeed und Bluetooth; alles, was Logitech G HUB kennt |
-| Gaming | Razer (kabellos), Headsets von SteelSeries, Corsair, HyperX |
-| Büro-Headsets | Jabra (Link 380/390, Evolve2), Poly BT600 |
-| Controller | Xbox, PlayStation DualSense und DualShock 4 |
+| Bluetooth in general | Every device whose battery level Windows knows, and devices with the Bluetooth LE battery service |
+| Apple | AirPods and Beats (left, right, case), Magic Keyboard, Magic Mouse, Magic Trackpad |
+| Earbuds | Samsung Galaxy Buds, Sony WH-/WF-/LinkBuds, Huawei FreeBuds, Google Fast Pair devices (Pixel Buds, OnePlus, Nothing, JBL and more) |
+| Logitech | Unifying, Bolt, Lightspeed and Bluetooth; everything Logitech G HUB knows |
+| Gaming | Razer (wireless), headsets from SteelSeries, Corsair, HyperX |
+| Office headsets | Jabra (Link 380/390, Evolve2), Poly BT600 |
+| Controllers | Xbox, PlayStation DualSense and DualShock 4 |
 
-Wird ein Gerät nicht erkannt: Rechtsklick aufs Symbol → **Diagnosebericht öffnen**. Der Bericht hilft, das Gerät nachzurüsten.
+Device not recognized? Right-click the tray icon → **Open diagnostic report**. The report helps to add support for it.
 
-## Installieren
+## Install
 
-1. [`BatteryGlance-win-Setup.exe`](https://github.com/grundimdev/battery-glance-releases/releases/latest/download/BatteryGlance-win-Setup.exe) herunterladen und starten. Adminrechte sind nicht nötig.
-2. Windows SmartScreen kann warnen, weil die Datei noch nicht signiert ist: **Weitere Informationen → Trotzdem ausführen**.
-3. Das Akku-Symbol erscheint im Infobereich der Taskleiste (ggf. über den Pfeil `^` ausklappen).
+1. Download [`BatteryGlance-win-Setup.exe`](https://github.com/grundimdev/battery-glance-releases/releases/latest/download/BatteryGlance-win-Setup.exe) and run it. No admin rights needed.
+2. Windows SmartScreen may warn because the file is not signed yet: **More info → Run anyway**.
+3. The battery icon appears in the notification area of the taskbar (expand it with the `^` arrow if needed).
 
-Deinstallieren über *Einstellungen → Apps*. [Datenschutz](PRIVACY.md)
-
----
-
-<h2 id="english">English</h2>
-
-BatteryGlance shows the battery level of your mouse, keyboard, headphones and controllers right in the Windows taskbar.
-
-- The tray icon shows the device with the lowest level, color-coded and optionally as a number.
-- One click opens the overview; earbuds show left, right and case separately.
-- A notification (optionally with a sound) tells you when a device needs charging, at a threshold you choose.
-- Click a device for its battery history and an estimate of how long it lasts.
-- Reorder or hide devices, pick the one for the icon. Light and dark, German and English.
-- Optional JSON interface at `http://localhost:47800/api/devices` for Rainmeter, Stream Deck or scripts.
-- Updates itself and starts with Windows.
-
-Supported devices are listed in the table above: standard Bluetooth, AirPods/Beats, Apple Magic devices, Galaxy Buds, Sony, Huawei, Google Fast Pair earbuds, Logitech (incl. G HUB), Razer, SteelSeries, Corsair, HyperX, Jabra, Poly and Xbox/PlayStation controllers.
-
-**Install:** download [`BatteryGlance-win-Setup.exe`](https://github.com/grundimdev/battery-glance-releases/releases/latest/download/BatteryGlance-win-Setup.exe) and run it (no admin rights needed). If SmartScreen warns, choose **More info → Run anyway**. [Privacy](PRIVACY.md#english)
+The app starts in English; switch to German or your Windows display language under *Settings → Language*. Uninstall via *Settings → Apps*. [Privacy](PRIVACY.md)
