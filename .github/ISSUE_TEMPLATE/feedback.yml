@@ -1,0 +1,36 @@
+name: Feedback
+description: A bug, an idea or anything else about BatteryGlance
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is it about?
+      options:
+        - Something doesn't work
+        - A device is not recognized or shows a wrong level
+        - An idea or wish
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell us more
+      description: What happened, what did you expect? For a device, name its exact model.
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Diagnostic report (optional)
+      description: >
+        For device problems: right-click the BatteryGlance tray icon → Open diagnostic report,
+        then drag the file here or paste its content. It contains your device names, nothing else personal.
+  - type: input
+    id: version
+    attributes:
+      label: BatteryGlance version
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version

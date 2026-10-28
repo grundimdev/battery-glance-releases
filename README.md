@@ -40,4 +40,10 @@ Device not recognized? Right-click the tray icon → **Open diagnostic report**.
 2. Windows SmartScreen may warn because the file is not signed yet: **More info → Run anyway**.
 3. The battery icon appears in the notification area of the taskbar (expand it with the `^` arrow if needed).
 
+## Feedback
+
+Found a bug, a device that isn't recognized, or have an idea? [Send feedback](https://github.com/grundimdev/battery-glance-releases/issues/new?template=feedback.yml) (needs a free GitHub account), or use **Send feedback** in the tray menu, which fills in your app and Windows version.
+
+## Settings
+
 The app starts in English; switch to German or your Windows display language under *Settings → Language*. Uninstall via *Settings → Apps*. [Privacy](PRIVACY.md)
